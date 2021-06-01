@@ -1,0 +1,113 @@
+ body{
+
+
+    /*---a---- */
+    a{
+    	text-decoration: none;
+    }
+    /*-/-/-a---- */
+
+
+     /*---h---- */
+    h1, h2, h3, h4, h5{
+    	/*font-family: $font-primary;*/
+    	font-weight: 600;
+    	color: #004A2B;
+    }
+
+    h1{
+    	font-size: 3rem;
+    	line-height: 3.67rem;
+    }
+    h2{
+    	font-size: 2.6rem;
+    	line-height: 3.17rem;
+    }
+    h3{
+    	font-size: 2rem;
+    	line-height: 2.6rem;
+    }
+    h4{
+    	font-size: 1.8rem;
+    	line-height:2.6rem;
+    }
+    h5{
+    	font-size:1.5rem;
+    	line-height:1.83rem;
+    }
+    /*-/-/-h---- */
+
+     /*---input---- */
+    input{
+    	border: .1rem solid #DCDCDC;
+    	border-radius: .3rem;
+    	padding: 1rem 1.5rem 1.2rem;
+    	box-sizing: border-box;
+    	color: black;
+    	font-size: 1.3rem;
+    	line-height: 1.58rem;
+    	font-weight: 400;
+
+    	&:focus{
+    		
+    		border-color: #004A2B;
+    		};
+
+    	::placeholder{
+    		color: #666;
+    	}
+        [type=radio]{
+            background-color:red;
+        }
+
+        &.radio--1{
+            background-color:red;
+            width: 10rem;
+        }
+    }
+    /*-/-/-input---- */
+
+    /*---button---- */
+    button{
+        padding: 1.1rem;
+        border: none;
+        border-radius: .3rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+
+        transition: all .3s linear;
+
+        &.btm--1{
+            background-color: #004A2B;
+            color: white;
+            &:hover{
+                background-color: #198738;
+            }
+        }
+        &.btm--2{
+            border: .1rem solid #004A2B;
+            box-sizing: border-box;
+            background-color: inherit;
+            color: #004A2B;
+            &:hover{
+                background-color: #004A2B;
+                color: white;
+            }
+        }
+        &.btm--3{
+            border: .1rem solid #DFDFDF;
+            box-sizing: border-box;
+            background-color: inherit;
+            color: #838383;
+            &:hover{
+                border-color: #004A2B;
+                background-color: inherit;
+                color: #004A2B;
+            }
+        }
+    }
+     /*-/-/-button---- */
+
+
+}

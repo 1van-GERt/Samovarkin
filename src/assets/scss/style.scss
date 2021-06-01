@@ -1,0 +1,34 @@
+@import "vars";
+@import "mixins";
+
+@import "vendor/reset";
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+   background-color: $white;
+   color: $black;
+
+   font-family: $font-primary;
+   font-size: 1.4rem;
+   line-height: 1.5;
+   min-width: 32rem;
+   box-sizing: border-box;
+
+   overflow: scroll;
+
+
+}
+
+
+@import "UIkit.scss";
+
+
+@import "blocks/header/header.scss";
+@import "blocks/header/burger.scss";
+
+@import "blocks/footer/footer.scss";
+
+

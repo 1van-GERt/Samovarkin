@@ -1,0 +1,306 @@
+.header__info__container{
+		
+	display: none;
+	@include breakpoint($mobile-bp){
+		border-bottom: .1rem solid #ECECEC;
+		box-sizing: border-box;
+		display: block;
+	}
+}
+
+
+
+.header__info{
+	@include maxWidth;
+	display: none;
+	height: 4.2rem;
+	padding: 0 1.5rem;
+	@include breakpoint($mobile-bp){
+		display: flex;
+		justify-content: space-between;
+	}
+
+	ul{
+			display: flex;
+			align-items: center;
+			li{
+				:hover{
+					color: $green;
+				};
+			}			
+	}
+}
+
+.header__info__left{
+	padding: 1.5rem 1.5rem 1rem;
+	border-bottom: .1rem solid #ECECEC;
+	@include breakpoint($mobile-bp){
+		padding: 0;
+		border:none;
+	}
+
+	li:first-child{
+		a{
+			color: $black;
+			font-weight: 500;
+			font-size: 1.8rem;
+			line-height: 2.1rem;
+		};
+  		
+	}
+	li{
+		margin-right: 1.7rem;
+	}
+}
+
+.header__info__right{
+	li{margin-left: 3.7rem;}
+}
+
+.header__info__link{
+	padding: 1.3rem 0;
+	font-family: $font-primary;
+	font-weight: 400;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	color:#606060;
+}
+
+
+
+.header__nav{
+		@include maxWidth;
+	display: flex;
+	justify-content: space-between;
+
+	height: 1.5rem;
+		padding: 1.5rem;
+
+
+	background-color:white;
+
+	box-shadow:  0px 4px 4px 0px #00000014;
+
+
+
+
+	@include breakpoint($mobile-bp){
+		box-shadow: none;
+
+		height: 9.4rem;
+		padding-top: 0;
+		padding-bottom: 0;
+		& a:nth-child(2) {
+			order: -1;
+  		
+		}
+	}
+}
+
+.burger__seach,
+.logo,
+.basket{
+	display: flex;
+	align-items: center;	
+}
+
+.burger__seach {
+	position: relative;
+}
+
+.seach__input{
+	display: none;
+	@include breakpoint($mobile-bp){
+		display: block;
+		width: 50vw;
+		max-width: 67rem;
+		padding-right: 4rem;
+	}
+}
+
+.seach{
+	width: 1.6rem;
+	height: 1.6rem;
+
+	background: none;
+	border: none;
+
+
+	font-size: 0;
+	color: transparent;
+
+	background: url("././../images/search-black.svg") center no-repeat;
+	@include breakpoint($mobile-bp){
+		background: url("././../images/search-green.svg") center no-repeat;
+		width: 1.1rem;
+		height: 1.1rem;
+		position: absolute;
+		right: 1.1rem;
+
+	}
+}
+
+.logo {
+	img{
+		width: 1.6rem;
+		padding-right: .6rem;
+	}
+
+	@include breakpoint($mobile-bp){
+		img{
+			width: 3.8rem;
+			padding-right: 1.1rem;
+		}
+		h5{
+			font-size: 3rem;
+	    	line-height: 3.67rem;
+	    }	
+	}
+}
+
+.basket {
+	h5{
+			display: none;
+		}
+	@include breakpoint($mobile-bp){
+		h5{
+			display: block;
+		}
+	}
+}
+
+.basket__link{
+	display: flex;
+
+}
+
+.basket__number{
+text-align: center;
+position: relative;
+width: 3.5rem;
+height: 2rem;
+	p{
+		position: absolute;
+		right: .5rem;
+		top: -.22rem;
+		color: $white;
+		width: 20px;
+		font-weight: 600;
+		font-size: 1.1rem;
+		line-height: 1.34rem;
+
+		@include breakpoint($mobile-bp){
+			right: .2rem;
+			top: -.2rem;
+
+			font-size: 1.2rem;
+			line-height: 1.46rem;
+		}
+	}
+}
+.img-basket{
+	position: absolute;
+	left: 0;
+	width: 2.2rem;
+	height: 1.85rem;
+	@include breakpoint($mobile-bp){
+		width: 2.4rem;
+		height: 2.02rem;
+	}
+}
+
+.img-basket-number{
+	position: absolute;
+	right: .7rem;
+	top: -.4rem;
+	width: 1.6rem;
+	@include breakpoint($mobile-bp){
+		top: -.6rem;	
+		width: 2rem;
+		right: .2rem;	
+	}
+
+}
+
+.header__catalog__container{
+	display: none;
+	
+	@include breakpoint($mobile-bp){
+		display: block;
+		background-color: $green;
+	}
+}
+
+.header__catalog {
+}
+
+.header__catalog__nav {
+	@include maxWidth;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 6rem;
+	padding: 0 1.5rem;
+	li:first-child{
+		a{
+			background-color: #2B7153;
+			display: flex;
+			text-align: center;
+			min-width: 14rem;
+			box-sizing: border-box;
+			transition: all .3s linear;
+			&:hover{
+				background-color: $white;
+				color: $green;
+				span{
+					background-color: $green;
+				}
+			}
+		}
+	}	
+}
+
+.header__catalog__nav__item {
+
+	a{
+		display: block;
+		text-align: center;
+		padding: 1rem ;
+		border-radius: .3rem;
+		font-weight: 700;
+		font-size: 1.4rem;
+		line-height: 1.7rem;
+		color: $white;
+		 transition: all .3s linear;
+		&:hover{
+			background-color: #198738;
+		}
+	}
+}
+.burger__header__catalog {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 1.6rem;
+	height: 1.4rem;
+	margin-right: 1.1rem;
+	span{
+		display: block;
+		font-size: 0;
+		height: .2rem;
+		width: 1.6rem;
+		background-color: $white;
+	}
+}
+
+.mobile__header__catalog{
+	display: none;
+	@include breakpoint($mobile-bp){
+		display: none;
+	}
+}
+
+.mobile__catalog__nav{
+
+	border-bottom: .1rem solid #ECECEC;
+}

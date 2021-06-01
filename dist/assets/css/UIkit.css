@@ -1,0 +1,133 @@
+body {
+  /*---a---- */
+  /*-/-/-a---- */
+  /*---h---- */
+  /*-/-/-h---- */
+  /*---input---- */
+  /*-/-/-input---- */
+  /*---button---- */
+  /*-/-/-button---- */
+}
+
+body a {
+    text-decoration: none;
+}
+
+body h1, body h2, body h3, body h4, body h5 {
+    /*font-family: $font-primary;*/
+    font-weight: 600;
+    color: #004A2B;
+}
+
+body h1 {
+    font-size: 3rem;
+    line-height: 3.67rem;
+}
+
+body h2 {
+    font-size: 2.6rem;
+    line-height: 3.17rem;
+}
+
+body h3 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
+body h4 {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
+body h5 {
+    font-size: 1.5rem;
+    line-height: 1.83rem;
+}
+
+body input {
+    border: .1rem solid #DCDCDC;
+    border-radius: .3rem;
+    padding: 1rem 1.5rem 1.2rem;
+    box-sizing: border-box;
+    color: black;
+    font-size: 1.3rem;
+    line-height: 1.58rem;
+    font-weight: 400;
+}
+
+body input:focus {
+    border-color: #004A2B;
+}
+
+body input ::-webkit-input-placeholder {
+    color: #666;
+}
+
+body input ::-moz-placeholder {
+    color: #666;
+}
+
+body input :-ms-input-placeholder {
+    color: #666;
+}
+
+body input ::-ms-input-placeholder {
+    color: #666;
+}
+
+body input ::placeholder {
+    color: #666;
+}
+
+body input [type=radio] {
+    background-color: red;
+}
+
+body input.radio--1 {
+    background-color: red;
+    width: 10rem;
+}
+
+body button {
+    padding: 1.1rem;
+    border: none;
+    border-radius: .3rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    transition: all .3s linear;
+}
+
+body button.btm--1 {
+    background-color: #004A2B;
+    color: white;
+}
+
+body button.btm--1:hover {
+    background-color: #198738;
+}
+
+body button.btm--2 {
+    border: .1rem solid #004A2B;
+    box-sizing: border-box;
+    background-color: inherit;
+    color: #004A2B;
+}
+
+body button.btm--2:hover {
+    background-color: #004A2B;
+    color: white;
+}
+
+body button.btm--3 {
+    border: .1rem solid #DFDFDF;
+    box-sizing: border-box;
+    background-color: inherit;
+    color: #838383;
+}
+
+body button.btm--3:hover {
+    border-color: #004A2B;
+    background-color: inherit;
+    color: #004A2B;
+}

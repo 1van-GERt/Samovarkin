@@ -1,0 +1,15 @@
+@mixin breakpoint($br) {
+	 
+	 @media (min-width: $br) {
+	 	@content;
+	}
+}
+
+
+@mixin maxWidth() {
+	max-width: 128rem;
+
+	margin: 0 auto;
+
+
+}

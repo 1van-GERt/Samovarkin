@@ -1,0 +1,73 @@
+.burger {
+	display: block;
+	width: 1.6rem;
+	height: 1.4rem;
+
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 1.6rem 1.8rem 0 0;
+
+	font-size: 0;
+	color: transparent;
+
+
+
+	transform: translateY(-50%);
+
+	&:before,
+	&:after,
+	span {
+		display: block;
+		width: 100%;
+		height: .2rem;
+		border-radius: .2rem;
+
+		background-color: $black;
+
+		position: absolute;
+		left: 0;
+	}
+
+	&:before,
+	&:after {
+		content: "";
+		transition: transform .2s linear;
+	}
+
+	&:before{
+		top: 0;
+	}
+
+	&:after{
+		bottom: 0;
+	}
+
+	span {
+		top :50%;
+		transition: transform .2s linear;
+		transform: translateY(-50%);
+	}
+
+	.show-sidebar & {
+		span {
+			
+			transform: rotate(-45deg) scaleX(1.1);
+		}
+
+		&:before {
+			transform: rotate(-45deg) translate(-7px, 7px) scaleX(1.1);
+			/*top: 50%*/
+		}
+
+		&:after {
+			transform: rotate(45deg) translate(-6px, -6px) scaleX(1.1);
+			/*top: 50%*/
+		}
+	}
+
+	@include breakpoint($mobile-bp){
+		display: none;
+	}
+
+}
